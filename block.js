@@ -9,6 +9,8 @@ class Block{
         this.width = width;
         this.height = height;
         World.add(world, this.body);
+       this.image=loadImage("polygon.png")
+
       }
       display(){
         var angle = this.body.angle;
@@ -17,8 +19,8 @@ class Block{
       if (this.body.speed < 3) {
         translate(pos.x, pos.y);
         rotate(angle);
-        rectMode(CENTER);
-        rect(0,0,this.width, this.height);
+        imageMode(CENTER);
+        image(this.image,0,0,this.width, this.height);
         pop();
       }
       else{

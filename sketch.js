@@ -21,7 +21,7 @@ function setup(){
     ground =new Ground(450,390,900,20)
     stand = new Stand(380,300,270,10)
     stand2 = new Stand(700,200,200,10);
-    //slingshot = new SlingShot(this.ball,{x:200,y:200});
+    
 
 //level one
 block1 = new Block(280,275,30,40);  
@@ -67,7 +67,7 @@ blocks9 = new Block(700,95,30,40);
 
 ball = Bodies.circle(50,200,20);
   World.add(world,ball);
-
+  slingshot = new SlingShot(ball,{x:200,y:200});
  
 
 }
